@@ -1,0 +1,9 @@
+<Context>
+
+    <Resource name="redis/jedis" auth="Container" factory="ie.kambur.jedis.JNDIFactory"
+              singleton="false"
+              type="redis.clients.jedis.JedisPool"
+              uri="redis://localhost:6379"
+    />
+
+</Context>

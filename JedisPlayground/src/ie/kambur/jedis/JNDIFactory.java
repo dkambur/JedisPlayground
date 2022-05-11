@@ -1,4 +1,4 @@
-package com.dkambur.jedis;
+package ie.kambur.jedis;
 
 import java.util.Hashtable;
 

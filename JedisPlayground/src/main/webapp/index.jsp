@@ -12,7 +12,7 @@
 Context initCtx = new InitialContext();
 Context envCtx = (Context) initCtx.lookup("java:comp/env");
 
-JedisPoolAbstract thePool = (JedisPoolAbstract) envCtx.lookup("redis/jedis");
+JedisPool thePool = (JedisPool) envCtx.lookup("redis/jedis");
 String back;
 
 try (Jedis jedis = thePool.getResource()) {
